@@ -53,6 +53,7 @@ def get_average_age_for_season(data, season)
       v.each do |person|
         count += 1 
         out += person["age"].to_i
+        binding.pry
       end
     end
   end
