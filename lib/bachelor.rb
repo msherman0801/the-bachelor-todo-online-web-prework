@@ -51,7 +51,8 @@ def get_average_age_for_season(data, season)
   hash.each do |k,v|
     if k == season
       v.each do |person|
-        p
+        count += 1 
+        out = person[:age]
       end
     end
   end
