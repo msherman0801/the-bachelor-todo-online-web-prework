@@ -52,8 +52,9 @@ def get_average_age_for_season(data, season)
     if k == season
       v.each do |person|
         count += 1 
-        out = person[:age]
+        out += person[:age]
       end
     end
   end
+  out/count
 end
