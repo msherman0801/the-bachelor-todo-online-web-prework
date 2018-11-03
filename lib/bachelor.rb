@@ -57,5 +57,5 @@ def get_average_age_for_season(data, season)
     end
   end
   out = out/count
-  out.ceil
+  out.floor
 end
