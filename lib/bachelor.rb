@@ -45,7 +45,7 @@ def get_occupation(hash, hometown)
     end
 end
 
-def get_average_age_for_season(data, season)
+def get_average_age_for_season(hash, season)
   out = 0
   count = 0
   hash.each do |k,v|
