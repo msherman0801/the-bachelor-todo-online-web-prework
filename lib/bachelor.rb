@@ -1,5 +1,14 @@
-def get_first_name_of_season_winner(data, season)
-  # code here
+require 'pry'
+
+def get_first_name_of_season_winner(hash, season)
+  hash.each do |seas, data|
+    binding.pry
+    if seas == :"#{season}" 
+      if data[0][:status] == "Week 1"
+        puts data[0][:name].split(' ').first
+      end
+    end
+  end
 end
 
 def get_contestant_name(data, occupation)
