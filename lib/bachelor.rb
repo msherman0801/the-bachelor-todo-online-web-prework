@@ -46,5 +46,13 @@ def get_occupation(hash, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  hash.each do |k,v|
+    if k == season
+      v.each do |person|
+        if key["status"] == "Winner"
+            return key["name"].split(' ')[0]
+        end
+      end
+    end
+  end
 end
